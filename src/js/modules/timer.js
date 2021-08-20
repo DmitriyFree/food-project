@@ -9,12 +9,12 @@ function timer(selector, endtime) {
           seconds = Math.round((t / (1000)) % 60);
 
     return {
-      total = t,
-      days = days,
-      hours = hours,
-      minutes = minutes,
-      seconds = seconds
-    }
+      total: t,
+      days: days,
+      hours: hours,
+      minutes: minutes,
+      seconds: seconds
+    };
 
   }
 
@@ -38,7 +38,7 @@ function timer(selector, endtime) {
 
     function updateClock() {
 
-      const t = getTimeRemaining(endtime);
+      const t = calcTime(endtime);
       days.textContent = convertZero(t.days);
       hours.textContent = convertZero(t.hours);
       minutes.textContent = convertZero(t.minutes);
