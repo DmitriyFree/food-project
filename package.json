@@ -12,12 +12,13 @@
   "devDependencies": {
     "css-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.2.0",
+    "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "webpack": "^5.47.1",
-    "webpack-cli": "^4.7.2",
-    "node-sass": "^6.0.1"
+    "webpack-cli": "^4.7.2"
   },
   "dependencies": {
+    "json-server": "^0.16.3"
   }
 }

@@ -1,16 +1,19 @@
-function modal(modalSelector, show, triggerSelector) {
+function modal(modalSelector, showClass, hideClass, triggersSelector) {
   try {
 
     const modal = document.querySelector(modalSelector),
           triggers = document.querySelectorAll(triggerSelector);
 
     function showModal() {
-      modal.classList.add(show);
+      modal.classList.add(showClass);
+      modal.classList.remove(hideClass);
       document.documentElement.style.overflow = 'hidden';
+      clearTimeout(showModalTimer);
     }
 
     function hideModal() {
-      modal.classList.remove(show);
+      modal.classList.add(hideClass);
+      modal.classList.remove(showClass);
       document.documentElement.style.overflow = '';
     }
 
@@ -29,6 +32,17 @@ function modal(modalSelector, show, triggerSelector) {
         hideModal();
       }
     });
+
+    const showModalTimer = setTimeout(showModal, 50000);
+
+    function scrollShowModal() {
+
+      if (document.documentElement.clientHeight + document.documentElement.scrollTop >= document.documentElement.scrollHeight) {
+        showModal();
+        document.removeEventListener('scroll', scrollShowModal);
+      }
+    }
+    document.addEventListener('scroll', scrollShowModal);
 
   } catch (err) {
 
