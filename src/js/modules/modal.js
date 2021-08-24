@@ -2,7 +2,7 @@ function modal(modalSelector, showClass, hideClass, triggersSelector) {
   try {
 
     const modal = document.querySelector(modalSelector),
-          triggers = document.querySelectorAll(triggerSelector);
+          triggers = document.querySelectorAll(triggersSelector);
 
     function showModal() {
       modal.classList.add(showClass);
@@ -33,7 +33,7 @@ function modal(modalSelector, showClass, hideClass, triggersSelector) {
       }
     });
 
-    const showModalTimer = setTimeout(showModal, 50000);
+    const showModalTimer = setTimeout(showModal, 500000);
 
     function scrollShowModal() {
 
