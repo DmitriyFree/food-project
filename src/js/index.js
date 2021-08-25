@@ -5,6 +5,7 @@ import modal from './modules/modal';
 import tabs from './modules/tabs';
 import timer from './modules/timer';
 import form from './modules/form';
+import slider from './modules/slider';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -15,5 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
   cards();
   calculator();
   form();
+  slider('.offer__slider-wrapper', '.offer__slider-inner', '.offer__slide', '.offer__slider-prev', '.offer__slider-next', '#current', '#total');
 });
 

@@ -29,9 +29,6 @@ function calculator() {
 
         item.classList.remove(activeClass);
 
-        console.log(item.getAttribute('id'));
-        console.log(localStorage.getItem('gender'));
-
         if (item.getAttribute('id') === localStorage.getItem('gender')) {
           item.classList.add(activeClass);
         }
