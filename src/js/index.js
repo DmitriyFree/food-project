@@ -11,7 +11,7 @@ import slider from './modules/slider';
 window.addEventListener('DOMContentLoaded', () => {
 
   tabs('.tabheader__item', 'tabheader__item_active', '.tabcontent', 'tabcontent-active');
-  timer('.promotion__timer', '2021-08-31');
+  timer('.promotion__timer', '2021-09-30');
   modal('.modal', 'show', 'hide', '[data-modal]');
   cards();
   calculator();
