@@ -19,4 +19,3 @@ window.addEventListener('load', () => {
   form();
   slider('.offer__slider-wrapper', '.offer__slider-inner', '.offer__slide', '.offer__slider-prev', '.offer__slider-next', '#current', '#total');
 });
-
