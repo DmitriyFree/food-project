@@ -6,10 +6,11 @@ import tabs from './modules/tabs';
 import timer from './modules/timer';
 import form from './modules/form';
 import slider from './modules/slider';
+import preloader from './modules/preloader';
 
+window.addEventListener('load', () => {
 
-window.addEventListener('DOMContentLoaded', () => {
-
+  preloader();
   tabs('.tabheader__item', 'tabheader__item_active', '.tabcontent', 'tabcontent-active');
   timer('.promotion__timer', '2021-09-30');
   modal('.modal', 'show', 'hide', '[data-modal]');

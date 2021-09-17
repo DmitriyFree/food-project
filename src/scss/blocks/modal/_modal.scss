@@ -77,3 +77,20 @@
     line-height: 20px;
     color: red;
 }
+.btn-wrapper {
+    position: relative;
+}
+.btn-wrapper .spinner {
+    position: absolute;
+    top: 4px;
+    left: -40px;
+    display: none;
+}
+.btn-wrapper.btn-modal .spinner {
+    position: absolute;
+    top: 4px;
+    left: 20px;
+}
+.btn-wrapper .spinner.active {
+    display: block;
+}

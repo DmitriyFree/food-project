@@ -229,7 +229,10 @@
                 <input required placeholder="Ваше имя" name="name" type="text" class="order__input">
                 <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
                 <img src="src/icons/right.svg" alt="right">
-                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                <div class="btn-wrapper">
+                    <img class="spinner" src="./src/img/spinner.svg" alt="loading">
+                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                </div>
             </form>
         </div>
     </div>
@@ -304,11 +307,40 @@
                         <span id="phone"></span>
                     </div>
                     <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                    <!-- <button class="btn btn_dark btn_min">Перезвонить мне</button> -->
+                    <div class="btn-wrapper btn-modal">
+                        <img class="spinner" src="./src/img/spinner.svg" alt="loading">
+                        <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <section class="loader-wrapper">
+        <div class="loader">
+          <div class="blocks" style="--i:1"></div>
+          <div class="blocks" style="--i:2"></div>
+          <div class="blocks" style="--i:3"></div>
+          <div class="blocks" style="--i:4"></div>
+          <div class="blocks" style="--i:5"></div>
+          <div class="blocks" style="--i:6"></div>
+          <div class="blocks" style="--i:7"></div>
+          <div class="blocks" style="--i:8"></div>
+          <div class="blocks" style="--i:9"></div>
+          <div class="blocks" style="--i:10"></div>
+          <div class="blocks" style="--i:11"></div>
+          <div class="blocks" style="--i:12"></div>
+          <div class="blocks" style="--i:13"></div>
+          <div class="blocks" style="--i:14"></div>
+          <div class="blocks" style="--i:15"></div>
+          <div class="blocks" style="--i:16"></div>
+          <div class="blocks" style="--i:17"></div>
+          <div class="blocks" style="--i:18"></div>
+          <div class="blocks" style="--i:19"></div>
+          <div class="blocks" style="--i:20"></div>
+        </div>
+      </section>
 
     <script src="dist/bundle.js"></script>
 </body>

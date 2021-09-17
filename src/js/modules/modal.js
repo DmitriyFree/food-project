@@ -1,3 +1,5 @@
+import resetErrorText from "./resetErrorText";
+
 function modal(modalSelector, showClass, hideClass, triggersSelector) {
   try {
 
@@ -15,6 +17,7 @@ function modal(modalSelector, showClass, hideClass, triggersSelector) {
       modal.classList.add(hideClass);
       modal.classList.remove(showClass);
       document.documentElement.style.overflow = '';
+      resetErrorText();
     }
 
     triggers.forEach(item => {
