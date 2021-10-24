@@ -44,7 +44,7 @@ class Card {
 }
 
 function cards() {
-  server.getData('http://localhost:3000/menu')
+  server.getData('https://foodmyproject.herokuapp.com/menu')
 .then(data => {
   data.forEach(({img, altimg, title, descr, price}) => {
     new Card(img, altimg, title, descr, price, '.menu .container').render();

@@ -545,7 +545,7 @@ class Card {
 }
 
 function cards() {
-  _server__WEBPACK_IMPORTED_MODULE_0__.default.getData('http://localhost:3000/menu')
+  _server__WEBPACK_IMPORTED_MODULE_0__.default.getData('https://foodmyproject.herokuapp.com/menu')
 .then(data => {
   data.forEach(({img, altimg, title, descr, price}) => {
     new Card(img, altimg, title, descr, price, '.menu .container').render();
@@ -1167,7 +1167,7 @@ window.addEventListener('load', () => {
 
   (0,_modules_preloader__WEBPACK_IMPORTED_MODULE_8__.default)();
   (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_4__.default)('.tabheader__item', 'tabheader__item_active', '.tabcontent', 'tabcontent-active');
-  (0,_modules_timer__WEBPACK_IMPORTED_MODULE_5__.default)('.promotion__timer', '2021-09-30');
+  (0,_modules_timer__WEBPACK_IMPORTED_MODULE_5__.default)('.promotion__timer', '2021-11-30');
   (0,_modules_modal__WEBPACK_IMPORTED_MODULE_3__.default)('.modal', 'show', 'hide', '[data-modal]');
   (0,_modules_cards__WEBPACK_IMPORTED_MODULE_2__.default)();
   (0,_modules_calculator__WEBPACK_IMPORTED_MODULE_1__.default)();
