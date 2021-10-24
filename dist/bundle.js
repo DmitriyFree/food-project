@@ -602,9 +602,8 @@ function form() {
 
       const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-      _server__WEBPACK_IMPORTED_MODULE_1__.default.postData('http://localhost:3000/requests', json)
+      _server__WEBPACK_IMPORTED_MODULE_1__.default.postData('https://foodmyproject.herokuapp.com/requests', json)
       .then (data => {
-        console.log(data);
         showThanksModal('Спасибо, скоро мы с вами свяжемся');
         form.reset();
       })

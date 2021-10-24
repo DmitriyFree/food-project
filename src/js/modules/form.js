@@ -30,9 +30,8 @@ function form() {
 
       const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-      server.postData('http://localhost:3000/requests', json)
+      server.postData('https://foodmyproject.herokuapp.com/requests', json)
       .then (data => {
-        console.log(data);
         showThanksModal('Спасибо, скоро мы с вами свяжемся');
         form.reset();
       })
